@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tablets QR</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><h1>📱 Tablets QR</h1></header>
+  <main id="app"></main>
+  <nav id="tabs">
+    <button data-tab="buscar">🔍 Escanear</button>
+    <button data-tab="alta">➕ Alta</button>
+    <button data-tab="inventario">📋 Inventario</button>
+  </nav>
+
+  <!-- Lector de QR (jsQR) y generador de QR (qrcodejs) desde CDN: no se instala nada -->
+  <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
